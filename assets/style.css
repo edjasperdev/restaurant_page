@@ -1,0 +1,208 @@
+	html {
+		height: 100%;
+	}
+	
+	.mainNavigation {
+
+		display: flex;
+		height: 95px;
+		align-items: center;
+		background-color: #252525;
+		box-shadow: 0px 0px 10px 2px #000;
+	}
+
+	#smallLogo {
+
+		height: 50px;
+		mix-blend-mode: screen;
+		filter: invert(100%);
+	}
+
+	nav.smallLogo {
+
+		justify-content: center;
+		flex-grow: 1;
+		display: flex;
+	}
+		
+	nav.links {
+		flex-grow: 2;
+		justify-content: center;
+	}
+
+	ul { 
+		display: flex;
+		font-family: 'Convergence', sans-serif;
+		font-size: 14px;
+		justify-content: center;
+		padding: 10px;
+	}
+
+	li {
+		margin: 0 10px;
+		letter-spacing: 1px;
+	}
+
+	a {
+
+		text-decoration: none;
+		background-color: #252525;
+		color: #f8f8f8;
+	} 
+
+	a:hover {
+
+		color: #BDBDBD;
+	}
+
+	nav.social{
+		flex-grow: 1;
+	}
+	.social{
+
+		margin:20px auto;
+		display: flex;
+		justify-content: center;
+	}
+
+	body {
+		display: flex;
+		flex-direction: column;	
+		margin:0;
+		padding: 0px;	 				 		 	
+		background: linear-gradient(rgba(20,20,20,0.5), rgba(20,20,20,0.5)), url('https://github.com/jasperknowsbest/restaurant_page/blob/master/assets/background-image.png?raw=true');
+		height: 100vh;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-color: #252525;
+		min-height: 100%;		 	
+	}
+
+	.content {
+
+		flex: 1 0 auto;
+		padding: 20px;
+	}
+
+	#mainContent {
+
+		filter: invert(100%);
+		height: 300px;
+		position: fixed;
+		left: 50%;
+		top: 50%;
+		margin: -150px -250px;
+		border: none;
+	}
+
+	.footer {
+		display: flex;
+		height: 60px;
+		align-items: center;
+		background-color: #252525;
+		box-shadow: 0px 0px 10px 2px #000;
+		flex-shrink: 0;
+		justify-content: center;
+	}
+	
+	#signupButton{
+
+		background-color: #252525;
+		font-family: 'Convergence', sans-serif;
+		font-size: 14px;
+		color: #f8f8f8;
+		border: none;
+	}
+
+	.modalOverlay {
+		display: none;
+		justify-content: center;
+		align-items: center;
+		position: absolute;
+		top: 0;
+		left:0;
+		right: 0;
+		bottom: 0;
+		background-color: rgba(10,10,10,0.4); 
+	}
+
+	.modal-box {
+		background-color: #E7E7E5;
+		color: #252525;
+		margin: 15% auto;
+		font-family: 'Convergence', sans-serif;
+		border: none;
+		width: 400px;
+		height: 400px;
+		padding: 15px;
+		text-align: center; 
+		box-shadow: 0px 0px 10px 2px #000
+	}
+
+	#modal-text {
+		margin-top: 20%;
+		line-height: 30px;
+	}
+
+	#emailInput {
+		padding: 5px;
+		text-align: center;
+		height: 30px;
+		width: 250px;
+		font-family: 'Convergence', sans-serif;
+		font-size: 14px;
+	}
+
+	#submitButton{
+		border: none;
+		font-family: 'Convergence', sans-serif;
+		background-color: #BDBDBD;	
+		height: 40px;
+		width: 80px;
+	}
+
+	.modalClose {
+		color: #aaa;
+		float: right;
+		font-size: 28px;
+		font-weight: bold;
+		cursor: pointer;
+		margin: 15px;
+	}
+
+	.modalClose:hover, 
+	.modalClose:focus {
+		color: black;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	.successAlert {
+		 
+		position: absolute;
+		justify-content: center;
+		align-items: center;
+		color: #252525;
+		height: 100px;
+		width: 350px;
+		font-family: 'Convergence', sans-serif;
+		text-align: center; 
+		background-color: #E7E7E5; 
+		padding: 15px;
+	}
+
+	.alertCloseBtn {
+		margin-left: 15px;
+		color: white;
+		font-weight: bold;
+		float: right;
+		font-size: 22px;
+		line-height: 20px;
+		cursor: pointer;
+		transition: 0.3s;
+	}
+
+	.alertCloseBtn:hover {
+		color: black;
+	}
